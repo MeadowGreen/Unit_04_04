@@ -1,0 +1,126 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Meadow Green
+   Date:   9-13-19
+   
+   Filename: lake_styles.css
+
+*/
+@charset "utf-8";
+@font-face{
+    font-family: DobkinPlain;
+    src: url(DobkinPlain.ttf) format('ttf'),
+    url(DobkinPlain.woff) format('woff'),
+    url(DobkinPlain.woff2) format('woff2');
+}
+@font-face{
+    font-family: champagne;
+    src:url(cac_champagne.ttf) format('ttf'),
+    url(cac_champagne.woff) format('woff'),
+    url(cac_champagne.woff2) format('woff2');
+}
+
+/* Structural Styles */
+
+html{
+    background-color: hsl(47, 100%, 76%);
+}
+footer{
+    background-color: hsl(272, 100%, 41%);
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navigation Styles */
+
+header nav{
+    background-color: hsl(272, 100%, 41%);
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header ul a:visited, a:link{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+}
+header ul a:hover, a:active{
+    color: hsl(31, 100%, 53%);
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+
+/* Aside Styles */
+
+aside{
+    padding-left: 10px;
+    background-color: hsl(47, 100%, 76%);
+}
+aside h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+aside h2{
+    font-size: 1em;
+    text-align: left;
+}
+aside ul{
+    list-style-type: circle;
+    line-height: 2em;
+}
+/* Section Styles */
+
+#leftcol > p:first-of-type::first-letter{
+    font-size: 2em;
+    font-family: cursive;
+}
+#leftcol h1{
+    font-family: champagne, cursive;
+    font-size: 3em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 0px;
+}
+#leftcol p{
+    padding-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section#rightcol{
+    background-color: hsla(272, 100%, 41%, 0.3);
+    margin-right: 0%;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#rightcol h2{
+    font-family: champagne, cursive;
+    font-size: 3em;
+    text-align: center;
+}
+#rightcol nav > ul{
+    list-style-type: circle;
+    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9em;
+    line-height: 2em;
+}
+#rightcol nav > ul a:link, a:visited{
+    text-decoration: none;
+    color: hsl(272, 100%, 31%);
+}
+#rightcol nav > ul a:hover, a:active{
+    text-decoration: underline;
+    color: hsl(31, 100%, 53%);
+}
+blockquote{
+    font-family: cursive;
+    font-size: 1em;
+    margin: none;
+}
